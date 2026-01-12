@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Hybrid Search (direct)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/cli/hybrid_search_cli.py",
+      "args": ["rrf-search", "family movie about bears in the woods", "--rerank-method", "batch", "--limit", "3"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Multimodal Search (direct)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/cli/multimodal_search_cli.py",
+      "args": ["verify_image_embedding", "data/paddington.jpeg"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
